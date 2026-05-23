@@ -1,0 +1,1941 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rainy Day Activity Guide — 100 Indoor Activities by Age</title>
+  <style>
+    @page { size: Letter portrait; margin: 0.75in 0.6in; }
+    @media screen {
+      html { background: #d0d0d0; }
+      body { margin: 0; padding: 20px 0; }
+      .page-section {
+        width: 8.5in;
+        min-height: 11in;
+        margin: 0 auto 20px;
+        background: #fff;
+        box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+        box-sizing: border-box;
+        overflow: hidden;
+        padding: 0.5in;
+      }
+    }
+
+    * {
+      box-sizing: border-box;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", Arial, sans-serif;
+      font-size: 11pt;
+      line-height: 1.5;
+      color: #1a1a2e;
+      margin: 0;
+      padding: 0;
+    }
+
+    .cover {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+      color: white;
+      padding: 0.75in;
+      min-height: 10in;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      page-break-after: always;
+    }
+
+    .cover h1 {
+      font-size: 36pt;
+      font-weight: 800;
+      margin: 0 0 0.2in 0;
+      line-height: 1.2;
+    }
+
+    .cover .subtitle {
+      font-size: 18pt;
+      font-weight: 400;
+      opacity: 0.95;
+      margin: 0 0 0.5in 0;
+    }
+
+    .cover .tagline {
+      font-size: 14pt;
+      font-weight: 600;
+      background: rgba(255,255,255,0.2);
+      padding: 0.2in 0.4in;
+      border-radius: 30px;
+      margin: 0.3in 0;
+    }
+
+    .cover .meta {
+      font-size: 10pt;
+      opacity: 0.8;
+      margin-top: 1in;
+    }
+
+    .page-section {
+      padding: 0.5in;
+      page-break-after: always;
+    }
+
+    .page-section:last-child {
+      page-break-after: auto;
+    }
+
+    h1 { font-size: 28pt; color: #667eea; margin: 0 0 0.3in 0; }
+    h2 { font-size: 20pt; color: #764ba2; margin: 0.3in 0 0.2in 0; border-bottom: 2px solid #f093fb; padding-bottom: 0.1in; }
+    h3 { font-size: 14pt; color: #333; margin: 0.2in 0 0.1in 0; }
+
+    .toc {
+      background: #f8f9fa;
+      padding: 0.3in;
+      border-radius: 10px;
+      margin: 0.2in 0;
+    }
+
+    .toc-title {
+      font-size: 16pt;
+      font-weight: 700;
+      color: #667eea;
+      margin-bottom: 0.2in;
+    }
+
+    .toc-item {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.08in 0;
+      border-bottom: 1px dashed #ddd;
+    }
+
+    .toc-item:last-child {
+      border-bottom: none;
+    }
+
+    .toc-item a {
+      color: #333;
+      text-decoration: none;
+    }
+
+    .toc-item .page-num {
+      color: #667eea;
+      font-weight: 600;
+    }
+
+    .intro-box {
+      background: linear-gradient(135deg, #667eea20, #764ba220);
+      padding: 0.3in;
+      border-radius: 15px;
+      border-left: 4px solid #667eea;
+      margin: 0.2in 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0.2in;
+      margin: 0.3in 0;
+    }
+
+    .stat-card {
+      background: white;
+      padding: 0.2in;
+      border-radius: 10px;
+      text-align: center;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    }
+
+    .stat-card .number {
+      font-size: 28pt;
+      font-weight: 800;
+      color: #667eea;
+    }
+
+    .stat-card .label {
+      font-size: 9pt;
+      color: #666;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .age-group {
+      background: #fff;
+      border-radius: 15px;
+      padding: 0.25in;
+      margin: 0.2in 0;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+      page-break-inside: avoid;
+    }
+
+    .age-header {
+      display: flex;
+      align-items: center;
+      gap: 0.15in;
+      margin-bottom: 0.15in;
+    }
+
+    .age-icon {
+      width: 40px;
+      height: 40px;
+      background: linear-gradient(135deg, #667eea, #764ba2);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 18pt;
+    }
+
+    .age-title {
+      font-size: 16pt;
+      font-weight: 700;
+      color: #333;
+    }
+
+    .activity-card {
+      background: #f8f9fa;
+      border-radius: 10px;
+      padding: 0.15in;
+      margin: 0.1in 0;
+      display: flex;
+      gap: 0.15in;
+      align-items: flex-start;
+    }
+
+    .activity-num {
+      background: #667eea;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 10pt;
+      flex-shrink: 0;
+    }
+
+    .activity-content {
+      flex: 1;
+    }
+
+    .activity-name {
+      font-weight: 700;
+      color: #333;
+      font-size: 11pt;
+      margin-bottom: 0.05in;
+    }
+
+    .activity-details {
+      font-size: 9pt;
+      color: #666;
+      display: flex;
+      gap: 0.15in;
+      flex-wrap: wrap;
+    }
+
+    .activity-tag {
+      background: #e9ecef;
+      padding: 0.02in 0.08in;
+      border-radius: 5px;
+    }
+
+    .activity-tag.materials {
+      background: #fff3cd;
+    }
+
+    .activity-tag.time {
+      background: #d4edda;
+    }
+
+    .activity-tag.skill {
+      background: #cce5ff;
+    }
+
+    .materials-list {
+      background: #fff;
+      border-radius: 10px;
+      padding: 0.2in;
+      margin: 0.2in 0;
+      page-break-inside: avoid;
+    }
+
+    .materials-title {
+      font-size: 14pt;
+      font-weight: 700;
+      color: #667eea;
+      margin-bottom: 0.15in;
+      display: flex;
+      align-items: center;
+      gap: 0.1in;
+    }
+
+    .materials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.1in;
+    }
+
+    .material-item {
+      background: #f8f9fa;
+      padding: 0.1in;
+      border-radius: 8px;
+      font-size: 9pt;
+      text-align: center;
+    }
+
+    .tips-box {
+      background: linear-gradient(135deg, #f093fb20, #667eea20);
+      padding: 0.2in;
+      border-radius: 10px;
+      margin: 0.2in 0;
+      page-break-inside: avoid;
+    }
+
+    .tips-title {
+      font-size: 12pt;
+      font-weight: 700;
+      color: #764ba2;
+      margin-bottom: 0.1in;
+    }
+
+    .tip-item {
+      display: flex;
+      gap: 0.1in;
+      margin: 0.05in 0;
+      font-size: 10pt;
+    }
+
+    .tip-icon {
+      color: #667eea;
+      font-weight: bold;
+    }
+
+    .activity-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.15in;
+      margin: 0.15in 0;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.3in;
+    }
+
+    .footer-note {
+      text-align: center;
+      font-size: 8pt;
+      color: #999;
+      margin-top: 0.3in;
+      padding-top: 0.2in;
+      border-top: 1px solid #eee;
+    }
+
+    .bonus-section {
+      background: linear-gradient(135deg, #f093fb, #667eea);
+      color: white;
+      padding: 0.3in;
+      border-radius: 15px;
+      margin: 0.2in 0;
+      text-align: center;
+    }
+
+    .bonus-title {
+      font-size: 18pt;
+      font-weight: 800;
+      margin-bottom: 0.15in;
+    }
+
+    .bonus-item {
+      background: rgba(255,255,255,0.2);
+      padding: 0.1in 0.2in;
+      border-radius: 8px;
+      margin: 0.08in 0;
+      display: flex;
+      align-items: center;
+      gap: 0.1in;
+    }
+
+    .bonus-icon {
+      font-size: 16pt;
+    }
+
+    @media print {
+      .page-section {
+        page-break-after: always;
+      }
+      .page-section:last-child {
+        page-break-after: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- COVER PAGE -->
+  <section class="cover">
+    <div style="font-size: 12pt; letter-spacing: 3px; opacity: 0.9; margin-bottom: 0.3in;">100+ ACTIVITIES FOR ALL AGES</div>
+    <h1>Rainy Day<br>Activity Guide</h1>
+    <div class="subtitle">100 Indoor Activities by Age</div>
+    <div class="tagline">End the "I'm Bored!" Complaints for Good</div>
+    <div style="font-size: 11pt; margin: 0.2in 0; opacity: 0.9;">
+      Creative Activities for Toddlers, Preschoolers,<br>
+      Elementary Kids & Tweens (Ages 2-14)
+    </div>
+    <div class="meta">
+      Digital Download | Printable PDF | Instant Access
+    </div>
+  </section>
+
+  <!-- PAGE 2: INTRODUCTION & TOC -->
+  <section class="page-section">
+    <h1>Welcome, Parents & Caregivers!</h1>
+
+    <div class="intro-box">
+      <p style="margin: 0; font-size: 11pt;">
+        <strong>Got a rainy day coming?</strong> Don't stress — you've got this! This guide gives you
+        <strong>100+ engaging indoor activities</strong> that kids actually love, organized by age group
+        so you can find the perfect activity <em>right now</em>. No more screen time battles.
+        No more "I'm bored!" complaints. Just fun, creative activities that spark joy.
+      </p>
+    </div>
+
+    <div class="stats-grid">
+      <div class="stat-card">
+        <div class="number">100+</div>
+        <div class="label">Activities</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">4</div>
+        <div class="label">Age Groups</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">30+</div>
+        <div class="label">Materials Tips</div>
+      </div>
+      <div class="stat-card">
+        <div class="number">50+</div>
+        <div class="label">Variations</div>
+      </div>
+    </div>
+
+    <div class="toc">
+      <div class="toc-title">Table of Contents</div>
+      <div class="toc-item">
+        <a href="#toddlers">Toddlers (Ages 2-3)</a>
+        <span class="page-num">3-4</span>
+      </div>
+      <div class="toc-item">
+        <a href="#preschoolers">Preschoolers (Ages 4-5)</a>
+        <span class="page-num">5-7</span>
+      </div>
+      <div class="toc-item">
+        <a href="#elementary">Early Elementary (Ages 6-8)</a>
+        <span class="page-num">8-10</span>
+      </div>
+      <div class="toc-item">
+        <a href="#tweens">Tweens (Ages 9-14)</a>
+        <span class="page-num">11-13</span>
+      </div>
+      <div class="toc-item">
+        <a href="#materials">Materials Checklist</a>
+        <span class="page-num">14</span>
+      </div>
+      <div class="toc-item">
+        <a href="#tips">Pro Tips & Variations</a>
+        <span class="page-num">15</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PAGE 3: TODDLERS -->
+  <section class="page-section" id="toddlers">
+    <h2>Toddlers (Ages 2-3)</h2>
+    <p style="font-size: 10pt; color: #666; margin-bottom: 0.2in;">
+      Simple, sensory activities that build fine motor skills and keep tiny hands busy.
+    </p>
+
+    <div class="activity-grid">
+      <div class="age-group">
+        <div class="age-header">
+          <div class="age-icon">🎨</div>
+          <div class="age-title">25 Toddler Activities</div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">1</div>
+          <div class="activity-content">
+            <div class="activity-name">Finger Painting Fun</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Washable paint, paper</span>
+              <span class="activity-tag time">15-20 min</span>
+              <span class="activity-tag skill">Sensory</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">2</div>
+          <div class="activity-content">
+            <div class="activity-name">Container Sorting Game</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Plastic containers, buttons</span>
+              <span class="activity-tag time">10-15 min</span>
+              <span class="activity-tag skill">Cognitive</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">3</div>
+          <div class="activity-content">
+            <div class="activity-name">Playdough Smash</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Playdough, tools</span>
+              <span class="activity-tag time">20-30 min</span>
+              <span class="activity-tag skill">Motor Skills</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">4</div>
+          <div class="activity-content">
+            <div class="activity-name">Bubble Wrap Stomp</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Bubble wrap, tape</span>
+              <span class="activity-tag time">10 min</span>
+              <span class="activity-tag skill">Gross Motor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">5</div>
+          <div class="activity-content">
+            <div class="activity-name">Sensory Bin Dig</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Rice, beans, toys</span>
+              <span class="activity-tag time">20-30 min</span>
+              <span class="activity-tag skill">Sensory</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">6</div>
+          <div class="activity-content">
+            <div class="activity-name">Sticker Peeling Practice</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Stickers, paper</span>
+              <span class="activity-tag time">10-15 min</span>
+              <span class="activity-tag skill">Fine Motor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">7</div>
+          <div class="activity-content">
+            <div class="activity-name">Tunnel Crawl</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Blankets, chairs</span>
+              <span class="activity-tag time">15 min</span>
+              <span class="activity-tag skill">Gross Motor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">8</div>
+          <div class="activity-content">
+            <div class="activity-name">Ball Roll Race</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Balls, tubes</span>
+              <span class="activity-tag time">10 min</span>
+              <span class="activity-tag skill">Coordination</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">9</div>
+          <div class="activity-content">
+            <div class="activity-name">Foam Cube Building</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Foam blocks</span>
+              <span class="activity-tag time">15-20 min</span>
+              <span class="activity-tag skill">Creativity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">10</div>
+          <div class="activity-content">
+            <div class="activity-name">Color Sorting Cups</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Colored cups, objects</span>
+              <span class="activity-tag time">15 min</span>
+              <span class="activity-tag skill">Color Learning</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">11</div>
+          <div class="activity-content">
+            <div class="activity-name">Musical Blanket Ride</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Blanket, music</span>
+              <span class="activity-tag time">10 min</span>
+              <span class="activity-tag skill">Movement</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">12</div>
+          <div class="activity-content">
+            <div class="activity-name">Crinkle Paper Dig</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Tissue paper, toys</span>
+              <span class="activity-tag time">15 min</span>
+              <span class="activity-tag skill">Sensory</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">Rainy Day Activity Guide | Toddlers (Ages 2-3) | Page 3</div>
+  </section>
+
+  <!-- PAGE 4: TODDLERS CONTINUED -->
+  <section class="page-section">
+    <h2 style="color: #667eea;">More Toddler Fun (13-25)</h2>
+
+    <div class="activity-grid">
+      <div class="age-group">
+        <div class="activity-card">
+          <div class="activity-num">13</div>
+          <div class="activity-content">
+            <div class="activity-name">Puzzle Piece Hunt</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Puzzle pieces, hidden spots</span>
+              <span class="activity-tag time">15 min</span>
+              <span class="activity-tag skill">Problem-solving</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">14</div>
+          <div class="activity-content">
+            <div class="activity-name">Water Pouring Station</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Containers, water, food coloring</span>
+              <span class="activity-tag time">20 min</span>
+              <span class="activity-tag skill">Science</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">15</div>
+          <div class="activity-content">
+            <div class="activity-name">Paper tearing strips</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Newspaper, magazines</span>
+              <span class="activity-tag time">10 min</span>
+              <span class="activity-tag skill">Fine Motor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">16</div>
+          <div class="activity-content">
+            <div class="activity-name">Mirror Peek-a-boo</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Handheld mirror</span>
+              <span class="activity-tag time">10 min</span>
+              <span class="activity-tag skill">Social</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">17</div>
+          <div class="activity-content">
+            <div class="activity-name">Cardboard Box House</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Large boxes, crayons</span>
+              <span class="activity-tag time">30 min</span>
+              <span class="activity-tag skill">Imaginative</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">18</div>
+          <div class="activity-content">
+            <div class="activity-name">Colored Ice Cubes</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Ice cube trays, food coloring</span>
+              <span class="activity-tag time">15 min prep + play</span>
+              <span class="activity-tag skill">Sensory</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">19</div>
+          <div class="activity-content">
+            <div class="activity-name">Pom-pom Drop</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Cardboard tubes, pom-poms</span>
+              <span class="activity-tag time">15 min</span>
+              <span class="activity-tag skill">Motor Skills</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">20</div>
+          <div class="activity-content">
+            <div class="activity-name">Sensory Bottle Making</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Empty bottles, glitter, water</span>
+              <span class="activity-tag time">20 min</span>
+              <span class="activity-tag skill">Creative</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">21</div>
+          <div class="activity-content">
+            <div class="activity-name">Stacking Cups Tower</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Plastic cups</span>
+              <span class="activity-tag time">15 min</span>
+              <span class="activity-tag skill">Math Concepts</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">22</div>
+          <div class="activity-content">
+            <div class="activity-name">Nature Walk Indoor</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Stuffed animals, "trail"</span>
+              <span class="activity-tag time">20 min</span>
+              <span class="activity-tag skill">Imaginative</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">23</div>
+          <div class="activity-content">
+            <div class="activity-name">Balloon Ball Bounce</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Balloons</span>
+              <span class="activity-tag time">10-15 min</span>
+              <span class="activity-tag skill">Gross Motor</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">24</div>
+          <div class="activity-content">
+            <div class="activity-name">Singing & Dancing Freeze</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Music player</span>
+              <span class="activity-tag time">15 min</span>
+              <span class="activity-tag skill">Music/Movement</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="activity-card">
+          <div class="activity-num">25</div>
+          <div class="activity-content">
+            <div class="activity-name">Bath Time Letters</div>
+            <div class="activity-details">
+              <span class="activity-tag materials">Waterproof letters, tub</span>
+              <span class="activity-tag time">20 min</span>
+              <span class="activity-tag skill">Learning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tips-box">
+      <div class="tips-title">Toddler Tips</div>
+      <div class="tip-item"><span class="tip-icon">*</span> Keep activities short (10-20 min max)</div>
+      <div class="tip-item"><span class="tip-icon">*</span> Always supervise sensory play with small objects</div>
+      <div class="tip-item"><span class="tip-icon">*</span> Let them explore at their own pace — no "correct" way</div>
+    </div>
+
+    <div class="footer-note">Rainy Day Activity Guide | Toddlers (Ages 2-3) | Page 4</div>
+  </section>
+
+  <!-- PAGE 5: PRESCHOOLERS -->
+  <section class="page-section" id="preschoolers">
+    <h2>Preschoolers (Ages 4-5)</h2>
+    <p style="font-size: 10pt; color: #666; margin-bottom: 0.2in;">
+      Build creativity and learning through play with these engaging activities.
+    </p>
+
+    <div class="age-group">
+      <div class="age-header">
+        <div class="age-icon">🧒</div>
+        <div class="age-title">25 Preschooler Activities</div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">26</div>
+        <div class="activity-content">
+          <div class="activity-name">Fort Building Challenge</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Blankets, pillows, chairs</span>
+            <span class="activity-tag time">30+ min</span>
+            <span class="activity-tag skill">Engineering</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">27</div>
+        <div class="activity-content">
+          <div class="activity-name">Obstacle Course Indoor</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Cushions, toys, string</span>
+            <span class="activity-tag time">20-30 min</span>
+            <span class="activity-tag skill">Gross Motor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">28</div>
+        <div class="activity-content">
+          <div class="activity-name">Sidewalk Chalk Indoor</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Chalk, black craft paper</span>
+            <span class="activity-tag time">15-20 min</span>
+            <span class="activity-tag skill">Art</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">29</div>
+        <div class="activity-content">
+          <div class="activity-name">Cardboard Robot Costume</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Large boxes, tape, decorations</span>
+            <span class="activity-tag time">45 min</span>
+            <span class="activity-tag skill">Crafts</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">30</div>
+        <div class="activity-content">
+          <div class="activity-name">Indoor Treasure Hunt</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Hidden treasures, clues</span>
+            <span class="activity-tag time">30 min</span>
+            <span class="activity-tag skill">Problem-solving</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">31</div>
+        <div class="activity-content">
+          <div class="activity-name">Baking Together</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Simple recipe, ingredients</span>
+            <span class="activity-tag time">60 min</span>
+            <span class="activity-tag skill">Life Skills</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">32</div>
+        <div class="activity-content">
+          <div class="activity-name">Memory Game Match</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Cards or picture pairs</span>
+            <span class="activity-tag time">15-20 min</span>
+            <span class="activity-tag skill">Memory</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">33</div>
+        <div class="activity-content">
+          <div class="activity-name">Playdough Pizza Making</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Playdough, plastic tools, "toppings"</span>
+            <span class="activity-tag time">25 min</span>
+            <span class="activity-tag skill">Imaginative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">34</div>
+        <div class="activity-content">
+          <div class="activity-name">Balloon Volleyball</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Balloon, string, chairs</span>
+            <span class="activity-tag time">20 min</span>
+            <span class="activity-tag skill">Active Play</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">35</div>
+        <div class="activity-content">
+          <div class="activity-name">Nature Specimen Display</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Leaves, rocks, glue, paper</span>
+            <span class="activity-tag time">20 min</span>
+            <span class="activity-tag skill">Science</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">36</div>
+        <div class="activity-content">
+          <div class="activity-name">Dance Party Freeze</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Music, speakers</span>
+            <span class="activity-tag time">15 min</span>
+            <span class="activity-tag skill">Music/Movement</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">37</div>
+        <div class="activity-content">
+          <div class="activity-name">Storytime Puppet Show</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Socks, paper bags, craft supplies</span>
+            <span class="activity-tag time">30 min</span>
+            <span class="activity-tag skill">Language</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">Rainy Day Activity Guide | Preschoolers (Ages 4-5) | Page 5</div>
+  </section>
+
+  <!-- PAGE 6: PRESCHOOLERS CONTINUED -->
+  <section class="page-section">
+    <h2 style="color: #667eea;">More Preschooler Fun (38-50)</h2>
+
+    <div class="age-group">
+      <div class="activity-card">
+        <div class="activity-num">38</div>
+        <div class="activity-content">
+          <div class="activity-name">Simon Says Challenge</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">None needed</span>
+            <span class="activity-tag time">10-15 min</span>
+            <span class="activity-tag skill">Listening</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">39</div>
+        <div class="activity-content">
+          <div class="activity-name">Paper Airplane Factory</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Paper, markers</span>
+            <span class="activity-tag time">25 min</span>
+            <span class="activity-tag skill">Engineering</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">40</div>
+        <div class="activity-content">
+          <div class="activity-name">Kitchen Science Lab</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Vinegar, baking soda, food coloring</span>
+            <span class="activity-tag time">30 min</span>
+            <span class="activity-tag skill">Science</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">41</div>
+        <div class="activity-content">
+          <div class="activity-name">Masking Tape Road Race</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Masking tape, toy cars</span>
+            <span class="activity-tag time">20 min</span>
+            <span class="activity-tag skill">Imaginative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">42</div>
+        <div class="activity-content">
+          <div class="activity-name">Balloon Pop Letters</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Letter cutouts, balloons</span>
+            <span class="activity-tag time">20 min</span>
+            <span class="activity-tag skill">Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">43</div>
+        <div class="activity-content">
+          <div class="activity-name">Sock Puppet Theater</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Old socks, googly eyes, yarn</span>
+            <span class="activity-tag time">30 min</span>
+            <span class="activity-tag skill">Creative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">44</div>
+        <div class="activity-content">
+          <div class="activity-name">Ice Excavation Adventure</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Ice cubes, salt, tools</span>
+            <span class="activity-tag time">25 min</span>
+            <span class="activity-tag skill">Science</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">45</div>
+        <div class="activity-content">
+          <div class="activity-name">Indoor Mini Golf</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Cardboard, ball, sticks</span>
+            <span class="activity-tag time">30 min</span>
+            <span class="activity-tag skill">Coordination</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">46</div>
+        <div class="activity-content">
+          <div class="activity-name">Coloring Contest</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Coloring pages, crayons, markers</span>
+            <span class="activity-tag time">20 min</span>
+            <span class="activity-tag skill">Art</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">47</div>
+        <div class="activity-content">
+          <div class="activity-name">Puzzle Race Time</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Age-appropriate puzzles</span>
+            <span class="activity-tag time">20-30 min</span>
+            <span class="activity-tag skill">Problem-solving</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">48</div>
+        <div class="activity-content">
+          <div class="activity-name">Sensory Bottle Race</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Bottles, rice,计时器</span>
+            <span class="activity-tag time">15 min</span>
+            <span class="activity-tag skill">Science</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">49</div>
+        <div class="activity-content">
+          <div class="activity-name">Musical Chairs Indoor</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Chairs, music</span>
+            <span class="activity-tag time">15 min</span>
+            <span class="activity-tag skill">Active Play</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">50</div>
+        <div class="activity-content">
+          <div class="activity-name">Pretend Restaurant Day</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Play food, menus, apron</span>
+            <span class="activity-tag time">45 min</span>
+            <span class="activity-tag skill">Imaginative</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tips-box">
+      <div class="tips-title">Preschooler Tips</div>
+      <div class="tip-item"><span class="tip-icon">*</span> Give simple choices: "Red or blue paper?"</div>
+      <div class="tip-item"><span class="tip-icon">*</span> Celebrate effort, not just results</div>
+      <div class="tip-item"><span class="tip-icon">*</span> Build in transition warnings ("5 more minutes")</div>
+    </div>
+
+    <div class="footer-note">Rainy Day Activity Guide | Preschoolers (Ages 4-5) | Page 6</div>
+  </section>
+
+  <!-- PAGE 7: ELEMENTARY -->
+  <section class="page-section" id="elementary">
+    <h2>Early Elementary (Ages 6-8)</h2>
+    <p style="font-size: 10pt; color: #666; margin-bottom: 0.2in;">
+      Challenge growing minds with creative projects and interactive games.
+    </p>
+
+    <div class="age-group">
+      <div class="age-header">
+        <div class="age-icon">📚</div>
+        <div class="age-title">25 Elementary Activities</div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">51</div>
+        <div class="activity-content">
+          <div class="activity-name">LEGO Bridge Challenge</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">LEGO bricks, measuring tape</span>
+            <span class="activity-tag time">30 min</span>
+            <span class="activity-tag skill">Engineering</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">52</div>
+        <div class="activity-content">
+          <div class="activity-name">Indoor Scavenger Hunt</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Clue cards, timer,prizes</span>
+            <span class="activity-tag time">45 min</span>
+            <span class="activity-tag skill">Problem-solving</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">53</div>
+        <div class="activity-content">
+          <div class="activity-name">Board Game Tournament</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Board games, scorecards</span>
+            <span class="activity-tag time">60+ min</span>
+            <span class="activity-tag skill">Strategy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">54</div>
+        <div class="activity-content">
+          <div class="activity-name">Science Experiment Day</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Household ingredients, containers</span>
+            <span class="activity-tag time">45 min</span>
+            <span class="activity-tag skill">Science</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">55</div>
+        <div class="activity-content">
+          <div class="activity-name">Movie Making Fun</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Phone/tablet, props, backdrop</span>
+            <span class="activity-tag time">60 min</span>
+            <span class="activity-tag skill">Technology</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">56</div>
+        <div class="activity-content">
+          <div class="activity-name">Recipe Challenge</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Simple ingredients, recipe cards</span>
+            <span class="activity-tag time">60 min</span>
+            <span class="activity-tag skill">Life Skills</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">57</div>
+        <div class="activity-content">
+          <div class="activity-name">Stop Motion Animation</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Phone, clay/figures, backdrop</span>
+            <span class="activity-tag time">45 min</span>
+            <span class="activity-tag skill">Creative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">58</div>
+        <div class="activity-content">
+          <div class="activity-name">Indoor Camping Adventure</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Tent/blankets, flashlights, snacks</span>
+            <span class="activity-tag time">2+ hours</span>
+            <span class="activity-tag skill">Imaginative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">59</div>
+        <div class="activity-content">
+          <div class="activity-name">Journal Writing Time</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Notebooks, pens, prompts</span>
+            <span class="activity-tag time">20-30 min</span>
+            <span class="activity-tag skill">Writing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">60</div>
+        <div class="activity-content">
+          <div class="activity-name">Card Magic Tricks</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Deck of cards, tutorial videos</span>
+            <span class="activity-tag time">30 min</span>
+            <span class="activity-tag skill">Fine Motor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">61</div>
+        <div class="activity-content">
+          <div class="activity-name">Origami Workshop</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Origami paper, instructions</span>
+            <span class="activity-tag time">30 min</span>
+            <span class="activity-tag skill">Fine Motor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">62</div>
+        <div class="activity-content">
+          <div class="activity-name">Kitchen Chemistry</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Baking soda, vinegar, food coloring</span>
+            <span class="activity-tag time">40 min</span>
+            <span class="activity-tag skill">Science</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">Rainy Day Activity Guide | Early Elementary (Ages 6-8) | Page 7</div>
+  </section>
+
+  <!-- PAGE 8: ELEMENTARY CONTINUED -->
+  <section class="page-section">
+    <h2 style="color: #667eea;">More Elementary Fun (63-75)</h2>
+
+    <div class="age-group">
+      <div class="activity-card">
+        <div class="activity-num">63</div>
+        <div class="activity-content">
+          <div class="activity-name">Indoor Treasure Map</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Paper, crayons, small treasures</span>
+            <span class="activity-tag time">30 min</span>
+            <span class="activity-tag skill">Creativity</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">64</div>
+        <div class="activity-content">
+          <div class="activity-name">Secret Code Messages</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Paper, markers, cipher wheel</span>
+            <span class="activity-tag time">25 min</span>
+            <span class="activity-tag skill">Problem-solving</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">65</div>
+        <div class="activity-content">
+          <div class="activity-name">Design Your Own Game</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Cardboard, dice, game pieces</span>
+            <span class="activity-tag time">60 min</span>
+            <span class="activity-tag skill">Creative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">66</div>
+        <div class="activity-content">
+          <div class="activity-name">Indoor Bowling</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Plastic bottles, ball, tape</span>
+            <span class="activity-tag time">20 min</span>
+            <span class="activity-tag skill">Coordination</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">67</div>
+        <div class="activity-content">
+          <div class="activity-name">Build a Marble Run</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Cardboard tubes, tape, marbles</span>
+            <span class="activity-tag time">45 min</span>
+            <span class="activity-tag skill">Engineering</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">68</div>
+        <div class="activity-content">
+          <div class="activity-name">Comic Strip Creation</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Paper, markers, templates</span>
+            <span class="activity-tag time">30 min</span>
+            <span class="activity-tag skill">Creative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">69</div>
+        <div class="activity-content">
+          <div class="activity-name">Escape Room Challenge</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Puzzles, locks, clues</span>
+            <span class="activity-tag time">45-60 min</span>
+            <span class="activity-tag skill">Problem-solving</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">70</div>
+        <div class="activity-content">
+          <div class="activity-name">Podcast Recording</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Phone, topics, microphone</span>
+            <span class="activity-tag time">45 min</span>
+            <span class="activity-tag skill">Language</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">71</div>
+        <div class="activity-content">
+          <div class="activity-name"> DIY Friendship Bracelets</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Embroidery floss, clips</span>
+            <span class="activity-tag time">30 min</span>
+            <span class="activity-tag skill">Fine Motor</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">72</div>
+        <div class="activity-content">
+          <div class="activity-name">Indoor Photography Studio</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Phone/camera, props, backdrop</span>
+            <span class="activity-tag time">30 min</span>
+            <span class="activity-tag skill">Technology</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">73</div>
+        <div class="activity-content">
+          <div class="activity-name">Trivia Game Night</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Trivia cards, prizes, snacks</span>
+            <span class="activity-tag time">45 min</span>
+            <span class="activity-tag skill">Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">74</div>
+        <div class="activity-content">
+          <div class="activity-name">Paper Mache Project</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Newspaper, flour, water, balloons</span>
+            <span class="activity-tag time">2 hours</span>
+            <span class="activity-tag skill">Arts</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">75</div>
+        <div class="activity-content">
+          <div class="activity-name">Talent Show Preparation</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Costumes, music, props</span>
+            <span class="activity-tag time">60 min</span>
+            <span class="activity-tag skill">Performance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tips-box">
+      <div class="tips-title">Elementary Tips</div>
+      <div class="tip-item"><span class="tip-icon">*</span> Let them lead — give choices, not directions</div>
+      <div class="tip-item"><span class="tip-icon">*</span> Encourage persistence with "almost there" messages</div>
+      <div class="tip-item"><span class="tip-icon">*</span> Celebrate creativity, not perfection</div>
+    </div>
+
+    <div class="footer-note">Rainy Day Activity Guide | Early Elementary (Ages 6-8) | Page 8</div>
+  </section>
+
+  <!-- PAGE 9: TWEENS -->
+  <section class="page-section" id="tweens">
+    <h2>Tweens (Ages 9-14)</h2>
+    <p style="font-size: 10pt; color: #666; margin-bottom: 0.2in;">
+      Challenging activities that build skills and independence.
+    </p>
+
+    <div class="age-group">
+      <div class="age-header">
+        <div class="age-icon">🎯</div>
+        <div class="age-title">25 Tween Activities</div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">76</div>
+        <div class="activity-content">
+          <div class="activity-name">Coding Challenge Hour</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Computer, Scratch or Python</span>
+            <span class="activity-tag time">60+ min</span>
+            <span class="activity-tag skill">Technology</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">77</div>
+        <div class="activity-content">
+          <div class="activity-name">YouTube Channel Creation</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Phone, editing app, topics</span>
+            <span class="activity-tag time">2+ hours</span>
+            <span class="activity-tag skill">Media</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">78</div>
+        <div class="activity-content">
+          <div class="activity-name">Advanced Cooking Challenge</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Recipe, ingredients, tools</span>
+            <span class="activity-tag time">90 min</span>
+            <span class="activity-tag skill">Life Skills</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">79</div>
+        <div class="activity-content">
+          <div class="activity-name">Digital Art Creation</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Tablet, drawing app</span>
+            <span class="activity-tag time">45 min</span>
+            <span class="activity-tag skill">Creative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">80</div>
+        <div class="activity-content">
+          <div class="activity-name">Write a Short Story</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Notebook, writing prompts</span>
+            <span class="activity-tag time">45 min</span>
+            <span class="activity-tag skill">Writing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">81</div>
+        <div class="activity-content">
+          <div class="activity-name">DIY Drone Building</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Drone kit, tools</span>
+            <span class="activity-tag time">3+ hours</span>
+            <span class="activity-tag skill">Engineering</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">82</div>
+        <div class="activity-content">
+          <div class="activity-name">Podcast Production</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Microphone, editing software</span>
+            <span class="activity-tag time">60 min</span>
+            <span class="activity-tag skill">Media</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">83</div>
+        <div class="activity-content">
+          <div class="activity-name">Escape Room Design</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Puzzles, props, timer</span>
+            <span class="activity-tag time">2+ hours</span>
+            <span class="activity-tag skill">Creative</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">84</div>
+        <div class="activity-content">
+          <div class="activity-name">Chess Tournament</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Chess set, timer</span>
+            <span class="activity-tag time">60 min</span>
+            <span class="activity-tag skill">Strategy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">85</div>
+        <div class="activity-content">
+          <div class="activity-name">Robotics Challenge</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">LEGO robotics or similar</span>
+            <span class="activity-tag time">2 hours</span>
+            <span class="activity-tag skill">Technology</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">86</div>
+        <div class="activity-content">
+          <div class="activity-name">Graphic Design Project</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Computer, Canva or similar</span>
+            <span class="activity-tag time">60 min</span>
+            <span class="activity-tag skill">Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">87</div>
+        <div class="activity-content">
+          <div class="activity-name">Photography Walk</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Camera/phone, photo challenge list</span>
+            <span class="activity-tag time">45 min</span>
+            <span class="activity-tag skill">Art</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-note">Rainy Day Activity Guide | Tweens (Ages 9-14) | Page 9</div>
+  </section>
+
+  <!-- PAGE 10: TWEENS CONTINUED -->
+  <section class="page-section">
+    <h2 style="color: #667eea;">More Tween Fun (88-100)</h2>
+
+    <div class="age-group">
+      <div class="activity-card">
+        <div class="activity-num">88</div>
+        <div class="activity-content">
+          <div class="activity-name">Business Plan Creation</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Paper, market research</span>
+            <span class="activity-tag time">60 min</span>
+            <span class="activity-tag skill">Entrepreneurship</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">89</div>
+        <div class="activity-content">
+          <div class="activity-name">Music Production</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Computer, free software</span>
+            <span class="activity-tag time">90 min</span>
+            <span class="activity-tag skill">Music</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">90</div>
+        <div class="activity-content">
+          <div class="activity-name">3D Printing Design</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">3D software, printer access</span>
+            <span class="activity-tag time">60 min</span>
+            <span class="activity-tag skill">Technology</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">91</div>
+        <div class="activity-content">
+          <div class="activity-name">Debate Club Night</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Topics, timer, scoreboard</span>
+            <span class="activity-tag time">45 min</span>
+            <span class="activity-tag skill">Language</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">92</div>
+        <div class="activity-content">
+          <div class="activity-name">Start a Blog</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Computer, blog platform</span>
+            <span class="activity-tag time">60 min</span>
+            <span class="activity-tag skill">Writing</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">93</div>
+        <div class="activity-content">
+          <div class="activity-name">DIY Electronics Project</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Arduino kit, instructions</span>
+            <span class="activity-tag time">2 hours</span>
+            <span class="activity-tag skill">Engineering</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">94</div>
+        <div class="activity-content">
+          <div class="activity-name">Anime/Manga Creation</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Drawing supplies, reference</span>
+            <span class="activity-tag time">60 min</span>
+            <span class="activity-tag skill">Art</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">95</div>
+        <div class="activity-content">
+          <div class="activity-name">Strategy Game Tournament</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Complex board games</span>
+            <span class="activity-tag time">2+ hours</span>
+            <span class="activity-tag skill">Strategy</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">96</div>
+        <div class="activity-content">
+          <div class="activity-name">Video Editing Challenge</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Footage, editing software</span>
+            <span class="activity-tag time">90 min</span>
+            <span class="activity-tag skill">Media</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">97</div>
+        <div class="activity-content">
+          <div class="activity-name">Learn a New Language</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">App, books, flashcards</span>
+            <span class="activity-tag time">30 min</span>
+            <span class="activity-tag skill">Learning</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">98</div>
+        <div class="activity-content">
+          <div class="activity-name">DIY Woodworking Project</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Wood, tools, plans</span>
+            <span class="activity-tag time">2+ hours</span>
+            <span class="activity-tag skill">Crafts</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">99</div>
+        <div class="activity-content">
+          <div class="activity-name">App Design Challenge</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Paper, markers, presentation</span>
+            <span class="activity-tag time">60 min</span>
+            <span class="activity-tag skill">Design</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="activity-card">
+        <div class="activity-num">100</div>
+        <div class="activity-content">
+          <div class="activity-name">Community Impact Project</div>
+          <div class="activity-details">
+            <span class="activity-tag materials">Research materials, planning</span>
+            <span class="activity-tag time">90 min+</span>
+            <span class="activity-tag skill">Leadership</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tips-box">
+      <div class="tips-title">Tween Tips</div>
+      <div class="tip-item"><span class="tip-icon">*</span> Respect their growing independence</div>
+      <div class="tip-item"><span class="tip-icon">*</span> Focus on skill-building and real-world applications</div>
+      <div class="tip-item"><span class="tip-icon">*</span> Encourage them to teach others what they learn</div>
+    </div>
+
+    <div class="footer-note">Rainy Day Activity Guide | Tweens (Ages 9-14) | Page 10</div>
+  </section>
+
+  <!-- PAGE 11: MATERIALS CHECKLIST -->
+  <section class="page-section" id="materials">
+    <h2>Materials Checklist</h2>
+    <p style="font-size: 10pt; color: #666; margin-bottom: 0.2in;">
+      Stock up on these basics for stress-free activity prep.
+    </p>
+
+    <div class="materials-list">
+      <div class="materials-title">
+        <span style="font-size: 20pt;">*</span> Art & Craft Supplies
+      </div>
+      <div class="materials-grid">
+        <div class="material-item">Construction paper</div>
+        <div class="material-item">Markers & crayons</div>
+        <div class="material-item">Glue sticks & tape</div>
+        <div class="material-item">Safety scissors</div>
+        <div class="material-item">Stickers & stamps</div>
+        <div class="material-item">Playdough</div>
+        <div class="material-item">Popsicle sticks</div>
+        <div class="material-item">Pipe cleaners</div>
+        <div class="material-item">Googly eyes</div>
+        <div class="material-item">Beads & string</div>
+        <div class="material-item">Cardboard pieces</div>
+        <div class="material-item">Tissue paper</div>
+      </div>
+    </div>
+
+    <div class="materials-list">
+      <div class="materials-title">
+        <span style="font-size: 20pt;">*</span> Active Play Items
+      </div>
+      <div class="materials-grid">
+        <div class="material-item">Balloons</div>
+        <div class="material-item">Balls (various sizes)</div>
+        <div class="material-item">Jump rope</div>
+        <div class="material-item">Tunnel/play tunnel</div>
+        <div class="material-item">Bean bags</div>
+        <div class="material-item">Hula hoops</div>
+      </div>
+    </div>
+
+    <div class="materials-list">
+      <div class="materials-title">
+        <span style="font-size: 20pt;">*</span> Sensory & Science
+      </div>
+      <div class="materials-grid">
+        <div class="material-item">Rice & dried beans</div>
+        <div class="material-item">Water beads</div>
+        <div class="material-item">Sand play set</div>
+        <div class="material-item">Baking soda & vinegar</div>
+        <div class="material-item">Food coloring</div>
+        <div class="material-item">Magnifying glass</div>
+      </div>
+    </div>
+
+    <div class="materials-list">
+      <div class="materials-title">
+        <span style="font-size: 20pt;">*</span> Building & Construction
+      </div>
+      <div class="materials-grid">
+        <div class="material-item">LEGO/Duplo blocks</div>
+        <div class="material-item">Wooden blocks</div>
+        <div class="material-item">Foam blocks</div>
+        <div class="material-item">Cardboard boxes</div>
+        <div class="material-item">Magnetic tiles</div>
+        <div class="material-item"> straws & connectors</div>
+      </div>
+    </div>
+
+    <div class="footer-note">Rainy Day Activity Guide | Materials Checklist | Page 11</div>
+  </section>
+
+  <!-- PAGE 12: PRO TIPS -->
+  <section class="page-section" id="tips">
+    <h2>Pro Tips & Activity Variations</h2>
+
+    <div class="two-col">
+      <div>
+        <div class="tips-box">
+          <div class="tips-title">Extending Activities</div>
+          <div class="tip-item"><span class="tip-icon">1.</span> Add a "create your own version" challenge</div>
+          <div class="tip-item"><span class="tip-icon">2.</span> Time trials add excitement</div>
+          <div class="tip-item"><span class="tip-icon">3.</span> Turn solo activities into teams</div>
+          <div class="tip-item"><span class="tip-icon">4.</span> Add scoring for competitive kids</div>
+          <div class="tip-item"><span class="tip-icon">5.</span> Record and review (great for shy kids)</div>
+        </div>
+
+        <div class="tips-box">
+          <div class="tips-title">Managing Energy</div>
+          <div class="tip-item"><span class="tip-icon">*</span> High-energy activities first</div>
+          <div class="tip-item"><span class="tip-icon">*</span> Quiet activities after lunch</div>
+          <div class="tip-item"><span class="tip-icon">*</span> Rotate between active and calm</div>
+          <div class="tip-item"><span class="tip-icon">*</span> Build in snack breaks</div>
+        </div>
+      </div>
+
+      <div>
+        <div class="tips-box">
+          <div class="tips-title">Age-Appropriate Adjustments</div>
+          <div class="tip-item"><span class="tip-icon">*</span> Simplify for younger children</div>
+          <div class="tip-item"><span class="tip-icon">*</span> Add complexity for older kids</div>
+          <div class="tip-item"><span class="tip-icon">*</span> Pair young with old for mentoring</div>
+          <div class="tip-item"><span class="tip-icon">*</span> Mix age groups for cooperation</div>
+        </div>
+
+        <div class="tips-box">
+          <div class="tips-title">Bad Weather Backups</div>
+          <div class="tip-item"><span class="tip-icon">*</span> Always have 3 activities ready</div>
+          <div class="tip-item"><span class="tip-icon">*</span> Rotate favorites every few months</div>
+          <div class="tip-item"><span class="tip-icon">*</span> Keep materials in a "rainy day box"</div>
+          <div class="tip-item"><span class="tip-icon">*</span> Plan based on child mood</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bonus-section" style="margin-top: 0.3in;">
+      <div class="bonus-title">BONUS: 5 Quick Transition Activities</div>
+      <div class="bonus-item"><span class="bonus-icon">*</span> "Would You Rather" game (5 min)</div>
+      <div class="bonus-item"><span class="bonus-icon">*</span> Storytelling chain (10 min)</div>
+      <div class="bonus-item"><span class="bonus-icon">*</span> Silent theater (10 min)</div>
+      <div class="bonus-item"><span class="bonus-icon">*</span> Category race (5 min)</div>
+      <div class="bonus-item"><span class="bonus-icon">*</span> Draw it / Act it out (15 min)</div>
+    </div>
+
+    <div class="footer-note">Rainy Day Activity Guide | Pro Tips & Variations | Page 12</div>
+  </section>
+
+  <!-- BACK COVER -->
+  <section class="cover" style="background: linear-gradient(135deg, #764ba2 0%, #667eea 100%); min-height: 10in;">
+    <div style="font-size: 14pt; margin-bottom: 0.5in; opacity: 0.9;">
+      100+ Indoor Activities for Endless Fun
+    </div>
+    <div style="font-size: 32pt; font-weight: 800; margin-bottom: 0.3in;">
+      No More "I'm Bored!"
+    </div>
+    <div style="font-size: 16pt; margin-bottom: 0.5in; opacity: 0.9;">
+      Keep this guide handy for rainy days, snow days,<br>
+      sick days, and any day you need engaging activities.
+    </div>
+    <div style="font-size: 12pt; background: rgba(255,255,255,0.2); padding: 0.2in 0.4in; border-radius: 30px; margin-top: 0.3in;">
+      Print | Share | Enjoy
+    </div>
+    <div style="font-size: 10pt; opacity: 0.7; margin-top: 1in;">
+      Rainy Day Activity Guide | Instant Digital Download
+    </div>
+  </section>
+
+</body>
+</html>
